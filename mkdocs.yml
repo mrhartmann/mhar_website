@@ -2,12 +2,30 @@ site_name: Website Mhar
 site_url:  https://mrhartmann.github.io
 theme:
   name: material
+  # logo: assets/logo.png
+  # favicon: images/favicon.png
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon:  material/lightbulb-outline
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+  features:    
+    - navigation.tabs
+    - navigation.top
 
 plugins:
-  # - blog
+  - blog:
+      blog_dir: . 
+  - tags
   - search
+
 
 nav:
   - index.md
-  - Blog:
-    - blog/index.md
