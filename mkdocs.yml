@@ -1,0 +1,13 @@
+site_name: Website Mhar
+site_url:  https://mrhartmann.github.io
+theme:
+  name: material
+
+plugins:
+  # - blog
+  - search
+
+nav:
+  - index.md
+  - Blog:
+    - blog/index.md
